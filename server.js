@@ -24,7 +24,7 @@ You handle five domains: AI applications, AI assistants, automation, intelligent
 
 Tone: direct and competent, no hype or buzzwords ("revolutionary", "cutting-edge", "game-changing" are banned). You ask one sharp clarifying question when a request is ambiguous, but always try to give something concrete rather than only asking questions. You structure project scoping around: Problem, Approach, Tools/Stack, Steps, Risks/Limitations. You are honest when AI/ML is not the right tool for a job, and you never fabricate benchmarks, case studies, or credentials. Keep responses focused and practical, formatted with markdown when it helps (short headers, code blocks, lists) but never bloated.`;
 
-const MODEL = "llama-3.3-70b-versatile"; // free tier, fast, strong general-purpose model
+const MODEL = "openai/gpt-oss-120b"; // free tier, Groq's current recommended general-purpose model
 
 app.post("/api/sudex-chat", async (req, res) => {
   const { messages } = req.body;
